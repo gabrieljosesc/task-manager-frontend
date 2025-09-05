@@ -1,12 +1,30 @@
-# React + Vite
+Task Manager - Frontend README
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Task Manager - Frontend (React + Vite)
 
-Currently, two official plugins are available:
+This is the frontend for the Task Manager app, built with React (Vite) and Axios.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Setup Instructions
 
-## Expanding the ESLint configuration
+# 1. Clone the repository
+git clone https://github.com/your_username/task-manager-frontend.git
+cd task-manager-frontend/frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm run dev
+
+Frontend will run at:  
+http://localhost:5173 (default Vite port)
+
+#Features
+- Create a task  
+- Edit task title/description  
+- Toggle completed status  
+- Delete a task  
+
+#Notes
+- Make sure the backend (Django) is running at `http://127.0.0.1:8000`
+- If your backend runs on another port, update `frontend/src/api.js` → `baseURL`
